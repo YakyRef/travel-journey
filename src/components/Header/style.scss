@@ -1,0 +1,54 @@
+.header-container {
+  margin: auto;
+  position: fixed;
+  z-index: 10;
+  text-align: center;
+  top: 0;
+  display: block;
+  width: 100%;
+  background-color: #303e49;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  div, h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+  }
+  &__cardholder {
+    padding-top: 2.5%;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    >span{
+      color: #5ea2ce;
+    }
+  }
+  .header-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 77%;
+    margin: auto;
+    margin-top: 3%;
+
+    &__part {
+      font-size: 1.2em;
+      color:#5ea2ce;
+      > span {
+        color: #e1e1e1;
+      }
+      &.tier {
+        color: #FFBF00 ;
+        > span {
+          color: #fff;
+        }
+        >img{
+          margin-right: 5px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+}

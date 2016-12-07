@@ -1,0 +1,140 @@
+.input-page {
+  height: 100vh;
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: #303e49;
+  font-size: 16px;
+  div, h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+  }
+  .payoneerLogo{
+    max-width: 150px;
+    margin: auto;
+    margin-bottom: 4%;
+  }
+  .form-container {
+    height: 50%;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    h1 {
+      font-size: 3em;
+      color: #fff;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 1em;
+    }
+    > form {
+      > span {
+        position: relative;
+        display: inline-block;
+        margin: 30px 10px;
+
+        .skinny {
+          display: inline-block;
+          text-align: center;
+          font-family: 'Raleway', sans-serif;
+          width: 400px;
+          padding: 7px 0 10px 15px;
+          font-weight: 400;
+          color: #000;
+          background: #fff;
+          border: 0;
+          border-radius: 3px;
+          outline: 0;
+          text-indent: 75px; // Arbitrary.
+          transition: all .3s ease-in-out;
+          font-size: 150%;
+          line-height: 39px;
+          margin: 0;
+
+          &::-webkit-input-placeholder {
+            color: #efefef;
+            text-indent: 0;
+            font-weight: 300;
+          }
+
+          + label {
+            display: inline-block;
+            position: absolute;
+            transform: translateX(0);
+            top: 0;
+            left: 0;
+            padding: 20px 15px;
+            text-shadow: 0 1px 0 rgba(19, 74, 70, .4);
+            transition: all .3s ease-in-out;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            overflow: hidden;
+            color:#fff;
+
+            &:before,
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              left: 0;
+              z-index: -1;
+              transition: all .3s ease-in-out;
+            }
+            &:before {
+              // Skinny bit here
+              top: 5px;
+              bottom: 5px;
+              background: #ff4800; // change this to #134A46
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+            }
+            &:after {
+              top: 0;
+              bottom: 0;
+              background: #377D6A;
+            }
+          }
+        }
+        .skinny:focus,
+        .skinny:active {
+          color: #377D6A;
+          text-indent: 0;
+          background: #fff;
+
+          &::-webkit-input-placeholder {
+            color: #aaa;
+          }
+          + label {
+            transform: translateX(-100%);
+
+            &:after {
+              transform: translateX(100%);
+            }
+          }
+        }
+      }
+      margin-top: 5%;
+
+      .submitBtn{
+        background-color: #5ea2ce;
+        border-bottom: 5px solid #3d7faa;
+        text-shadow: 0px -2px #2980B9;
+        padding: 10px 40px;
+        margin: 0px 10px 10px 0px;
+        border-radius: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+        color: #FFF;
+        text-decoration: none;
+        cursor: pointer;
+        outline: 0;
+      }
+      .submitBtn:active
+      {
+        transform: translate(0px,5px);
+        -webkit-transform: translate(0px,5px);
+        border-bottom: 1px solid;
+      }
+    }
+
+  }
+}

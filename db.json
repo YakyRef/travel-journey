@@ -1,0 +1,25 @@
+{
+  "user":{
+    "id":"0001",
+    "first_name":"Dana",
+    "last_name":"Mizrachi",
+    "email":"abc@abc.vc",
+    "profile_image":"xxxx",
+    "posts":[
+      {
+        "id":"0001",
+        "date":"04/12/2016",
+        "title":"Post title",
+        "content":"Post Content",
+        "images":["image1","image2"]
+      },
+      {
+        "id":"0002",
+        "date":"04/12/2016",
+        "title":"Post title",
+        "content":"Post Content",
+        "images":["image1","image2"]
+      }
+    ]
+  }
+}

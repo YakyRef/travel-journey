@@ -1,0 +1,30 @@
+.changeFilter {
+  display: block;
+  margin-top: 2%;
+  padding: 1% 0;
+  background-color: #3c4b56;
+  height: 12%;
+  font-size: 16px;
+  > a {
+    margin: 0 1em;
+    &.active {
+      color: red;
+    }
+  }
+  .start-date, .end-date {
+    color: #acb7c0;
+
+  }
+  .datesContainer {
+    display: inline-block;
+    margin-left: 2%;
+    > input {
+      width: 109px !important;
+      text-align: center;
+    }
+  }
+  .datePickerBtn {
+    margin-left: 6px;
+  }
+
+}
