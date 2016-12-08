@@ -59,18 +59,7 @@ class TimeLine extends Component {
         return (
             <div>
                 <section id="cd-timeline" className="cd-container">
-                    {events.map((account, i) => {
-                       const icon = this.getIcon(account);
-                       return icon && (<Block
-                                            key={i}
-                                            icon={icon}
-                                            title={account.title}
-                                            content={account.description}
-                                            additionalDetails={account.additionalDetails}
-                                            date={account.eventDateStr}
-                                        />)
-                        }
-                    )}
+
 
                     <div className="babyIcon" style={{margin:"auto", textAlign: "center", zIndex:1000}}>
                        <img src={require('./../../images/baby-boy-icon.png')}/>

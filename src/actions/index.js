@@ -12,14 +12,14 @@ const getAction = (endpoint, types) => (details) => {
         httpParameters: {
         method: 'GET',
         mode: 'cors'},
-        endpoint:`${endpoint}/${details.id}`,
+        endpoint:`${endpoint}`,
         types,
         nextPath:details.nextPath
     }
 };
 
 
-export const getAccountHolder = getAction('/accountholder', [BLOCK_REQUEST,BLOCK_SUCCESS, BLOCK_FAIL]);
+export const getAccountHolder = getAction('/user', [BLOCK_REQUEST,BLOCK_SUCCESS, BLOCK_FAIL]);
 
 export const changeFilter = (filter,params) =>(
     {

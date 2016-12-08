@@ -5,7 +5,7 @@ export const CALL_API = "callApi";
 
 function callGetApi(endpoint, parameters) {
 
-    const api_root = `http://hackathon.oradsi-pc/api/v1/events`;
+    const api_root = `http://localhost:3000`;
     const fullUrl = (endpoint.indexOf(api_root) === -1) ? api_root + endpoint : endpoint;
     console.log(fullUrl);
     return fetch(fullUrl, parameters)

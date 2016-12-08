@@ -7,14 +7,13 @@ import './style.scss';
 class AccountPage extends Component {
 
 
-
     render() {
-        const {events ,filter, createdDay } = this.props;
-
+        const {events, filter, createdDay} = this.props;
+        console.log(events);
         return (
             <div className="account-page">
 
-                <TimeLine events={getActivityByFilter(events,filter)} createdDay={createdDay}/>
+                <TimeLine events={events} createdDay={createdDay}/>
             </div>
         );
     }

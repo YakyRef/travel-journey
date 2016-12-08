@@ -6,6 +6,7 @@ import * as actions from './../actions'
 const AcActivities = (state = {}, action) => {
     switch (action.type) {
         case 'BLOCK_SUCCESS':
+            console.log(action.response);
             return {isFetch: false, activities: action.response};
         case 'BLOCK_REQUEST':
             return {...state, isFetch: true};

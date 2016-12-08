@@ -32,7 +32,8 @@ class App extends Component {
                         totalAmountInUSD={accountHolder.activities.totalAmountInUSD}
                         regProgram={accountHolder.activities.regProgram}
                     />
-                    <AccountPage events={accountHolder.activities.events} filter={filter} createdDay={accountHolder.activities.regCompleteDateStr}/>
+                    {console.log(accountHolder.activities.posts)}
+                    <AccountPage events={accountHolder.activities.posts} filter={filter} createdDay={accountHolder.activities.regCompleteDateStr}/>
                 </div>
                 }
             </div>

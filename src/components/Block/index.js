@@ -13,25 +13,9 @@ class Block extends Component {
     render() {
         return (
 
-            <div className="cd-timeline-block">
+            <div className="block">
 
-                <div className="cd-timeline-img cd-picture">
-                    {this.props.icon}
-                </div>
-
-                <div className="cd-timeline-content">
-                    <h2>{ this.props.title }</h2>
-
-                    { this.props.additionalDetails ? Object.keys(this.props.additionalDetails).sort((a,b)=>a.localeCompare(b)).map((x)=> (
-                        <p className="cd-timeline-content__details"><span>{x}</span> : <span className="cd-timeline-content__value"> &nbsp;&nbsp; {this.props.additionalDetails[x]}</span></p>
-                        )): <p>  {this.props.content}</p>
-                    }
-
-
-                    <span className="cd-date">
-                        {this.props.date}
-                    </span>
-                </div>
+                block
 
             </div>
         )
